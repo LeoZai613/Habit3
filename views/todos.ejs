@@ -15,7 +15,7 @@ body{
 </style>
 
 
-    <h1>Todos</h1>
+    <h1>HABIT BATTLE</h1>
     <ul>
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
@@ -92,7 +92,19 @@ body{
 
             }
      </style>
-                </div>
+
+<a class="flex-middle-center-block-1024 auto center-1024 text-center" href="https://endearing-zuccutto-46d989.netlify.app/" target="">
+    Battle
+</a>
+     <style>
+        button.battle {
+            background-color: #8000ff;
+
+        }
+ </style>           
+    
+    </div>
+                
                 
             </div><!--.row-->
         
@@ -139,7 +151,6 @@ el.addEventListener('click', decHealth)
 function decHealth(){
         var health = document.getElementById("health")
         health.value -= 10; 
-        $('.status span').html('Picachu  used <b>BOLT</b>, <i>Super effective</i>, Charmander: '+dmg+'hp');
 
             }
         })
